@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Núcleo - Comparador de Planes de Salud</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Medical Núcleo te conecta con los mejores asesores de Swiss Medical, Galeno, Sancor Salud, Omint, Prevención Salud, Premedic y Salud Central. Compará planes y elegí el ideal para tu familia.">
+  <meta name="keywords" content="planes de salud, prepagas, Swiss Medical, Galeno, Sancor, Omint, Prevención, Premedic, Salud Central, comparador de prepagas">
+  <meta name="author" content="Medical Núcleo">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Medical Núcleo - Comparador de Planes de Salud">
+  <meta property="og:description" content="Encontrá las mejores prepagas y conectate con asesores especializados.">
+  <meta property="og:image" content="/preview.png">
+  <meta property="og:url" content="https://tudominio.netlify.app">
+  <meta property="og:type" content="website">
+
+  <!-- Favicons (asegurate de poner estos archivos en la raíz del deployment) -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Fuentes y Tailwind -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body { font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow fixed w-full z-20">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="#home" class="flex items-center gap-3">
+        <img src="/favicon-32x32.png" alt="Medical Núcleo logo" class="w-8 h-8">
+        <h1 class="text-lg font-bold text-blue-700">Medical Núcleo</h1>
+      </a>
+
+      <nav class="hidden md:flex space-x-6 items-center">
+        <a href="#home" class="hover:text-blue-600">Inicio</a>
+        <a href="#planes" class="hover:text-blue-600">Planes</a>
+        <a href="#contacto" class="hover:text-blue-600">Contacto</a>
+        <a href="#contacto" class="ml-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Comparar ahora</a>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <button id="menu-btn" class="md:hidden p-2 rounded focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menú">
+        <i data-lucide="menu" class="w-6 h-6 text-blue-700"></i>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+      <div class="px-4 py-4 space-y-2">
+        <a href="#home" class="block py-2">Inicio</a>
+        <a href="#planes" class="block py-2">Planes</a>
+        <a href="#contacto" class="block py-2">Contacto</a>
+        <a href="#contacto" class="block mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-center">Comparar ahora</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="pt-24 pb-16 text-center bg-blue-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 text-blue-700">Compará los mejores planes de salud</h2>
+      <p class="text-lg text-gray-600 mb-6">Conectamos con asesores oficiales de Swiss Medical, Galeno, Sancor Salud, Omint, Prevención Salud, Premedic y Salud Central.</p>
+      <a href="#contacto" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">¡Quiero asesoramiento!</a>
+    </div>
+  </section>
+
+  <!-- Logos de Prepagas -->
+  <section id="planes" class="py-16 container mx-auto px-6">
+    <h3 class="text-2xl font-bold text-center mb-10 text-gray-800">Trabajamos con las principales prepagas</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 items-center">
+
+      <div class="bg-white p-4 rounded-lg shadow text-center">
+        <img src="/images/swiss.png" alt="Swiss Medical" class="mx-auto h-16 object-contain" loading="lazy">
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow text-center">
+        <img src="/images/galeno.png" alt="Galeno" class="mx-auto h-16 object-contain" loading="lazy">
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow text-center">
+        <img src="/images/sancor.png" alt="Sancor Salud" class="mx-auto h-16 object-contain" loading="lazy">
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow text-center">
+        <img src="/images/omint.png" alt="Omint" class="mx-auto h-16 object-contain" loading="lazy">
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow text-center">
+        <img src="/images/prevencion.png" alt="Prevención Salud" class="mx-auto h-16 object-contain" loading="lazy">
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow text-center">
+        <img src="/images/premedic.png" alt="Premedic" class="mx-auto h-16 object-contain" loading="lazy">
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow text-center">
+        <img src="/images/saludcentral.png" alt="Salud Central" class="mx-auto h-16 object-contain" loading="lazy">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-16 bg-blue-50">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-2xl font-bold mb-6">Solicitá tu asesoramiento gratuito</h3>
+      <p class="mb-4 text-gray-600">Completá tus datos y un asesor especializado se comunicará para ayudarte a comparar y contratar.</p>
+
+      <form id="contactForm" class="max-w-md mx-auto bg-white p-6 rounded-lg shadow space-y-4">
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" class="w-full border rounded p-3" required>
+        <input type="email" id="email" name="email" placeholder="Tu email" class="w-full border rounded p-3" required>
+        <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" class="w-full border rounded p-3">
+        <select id="prepaga" name="prepaga" class="w-full border rounded p-3">
+          <option value="">Elegí tu prepaga</option>
+          <option>Swiss Medical</option>
+          <option>Galeno</option>
+          <option>Sancor Salud</option>
+          <option>Prevención Salud</option>
+          <option>Omint</option>
+          <option>Premedic</option>
+          <option>Salud Central</option>
+        </select>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Consulta (opcional)" class="w-full border rounded p-3"></textarea>
+
+        <button type="submit" class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 flex items-center justify-center gap-2">
+          <i data-lucide="whatsapp" class="w-5 h-5"></i> Enviar por WhatsApp
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p>© 2025 Medical Núcleo - Comparador de Planes de Salud</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Inicializar lucide icons
+    lucide.createIcons();
+
+    // Toggle del menu móvil
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', function () {
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Número del asesor (formato internacional)
+    const numeroAsesor = "5491171189501";
+
+    // Enviar formulario por WhatsApp
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const nombre = document.getElementById('nombre').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const telefono = document.getElementById('telefono').value.trim();
+      const prepaga = document.getElementById('prepaga').value;
+      const mensaje = document.getElementById('mensaje').value.trim();
+
+      let texto = `👋 Hola, soy ${nombre}.\n\n📧 Email: ${email}\n📱 Teléfono: ${telefono}\n🏥 Prepaga: ${prepaga}\n📝 Mensaje: ${mensaje}`;
+      const url = `https://wa.me/${numeroAsesor}?text=${encodeURIComponent(texto)}`;
+      window.open(url, '_blank');
+    });
+  </script>
+</body>
+</html>
